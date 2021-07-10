@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Navya cake shop</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="\">Navya Backrey</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="item.html">New item</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">contact us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Simple Cake</a></li>
+            <li><a class="dropdown-item" href="#">Barbi doll Cake</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">privacy policy</a></li>
+            <li><a class="dropdown-item" href="#">support</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Admin</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <div class="mx-3">
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModalLog">Login</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Signup</button>
+      </div>
+    </div>
+  
+</nav>
+
+
+<!-- login Modal -->
+<div class="modal fade" id="exampleModalLog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Log-in </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-floating mb-3">
+  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Email address</label>
+</div>
+<div class="form-floating">
+  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+  <label for="floatingPassword">Password</label>
+  <div class="container">
+  <div class="row">
+    <div class="col">
+      
+    </div>
+    <div class="col">
+      <p class="text-center"><a href="">Forgotte password?</a></p>
+    </div>
+  </div>
+</div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">LogIn</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Signup Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign Up to get account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <div class="form-floating mb-3">
+  <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Full name</label>
+</div>
+      <div class="form-floating mb-3">
+  <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Mobile</label>
+</div>
+       <div class="form-floating mb-3">
+  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Email address</label>
+</div>
+<div class="form-floating mb-3">
+  <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">dob</label>
+</div>
+<div class="form-floating">
+  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+  <label for="floatingPassword">Password</label>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Signup</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://source.unsplash.com/1400x400/?cake,cupcake
+" class="d-block w-100" alt="first img">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Wel come to navya backrey</h5>
+        <p>Find your favourate cake here....!</p>
+        <button class="btn btn-danger">Check</button>
+        <button class="btn btn-primary">Book</button>
+        <button class="btn btn-success">Test</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/1400x400/?choco,chocolate
+" class="d-block w-100" alt="second slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>hey i'm backrey vala</h5>
+        <p>some of favourate cakes are here in new section go and find now....</p>
+        <button class="btn btn-danger">Check</button>
+        <button class="btn btn-primary">Book</button>
+        <button class="btn btn-success">Test</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/1400x400/?Backrey,pastry
+" class="d-block w-100" alt="third slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Chocolate cakes....</h5>
+        <p>Our speciality in chocolate cakes ...</p>
+        <button class="btn btn-danger">Check</button>
+        <button class="btn btn-primary">Book</button>
+        <button class="btn btn-success">Test</button>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<div class="container my-4">
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Special cake</strong>
+          <h3 class="mb-0">Birthday cake</h3>
+          <div class="mb-1 text-muted">Jul 1</div>
+          <p class="card-text mb-auto">Special Birthday and anniversary cake for the your family and members book now cake for enjoy 100% home purity.</p>
+          <a href="" class="stretched-link">Buy Now</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="https://source.unsplash.com/190x240/?cake,backrey"></img>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Party cake</strong>
+          <h3 class="mb-0">Special parties cake</h3>
+          <div class="mb-1 text-muted">Jun 25</div>
+          <p class="mb-auto">We made cakes for party enjoy at home , office , park , picnic , hotel for more details watch our details .</p>
+          <a href="#" class="stretched-link">Buy Now</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="https://source.unsplash.com/190x240/?cake,milkcake">
+
+        </div>
+      </div>
+    </div>
+  </div>
+      
+      </div>
+
+<div class="container my-4">
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Eggless cake</strong>
+          <h3 class="mb-0">Birthday cake</h3>
+          <div class="mb-1 text-muted">Jul 1</div>
+          <p class="card-text mb-auto">we made cake for pure vegitarian family 100/100 pure cleaness and home made feeling and test 
+          good quality of materials.</p>
+          <a href="" class="stretched-link">Buy Now</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="bday.jpg"></img>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Combo cake</strong>
+          <h3 class="mb-0">Custom Size cake</h3>
+          <div class="mb-1 text-muted">Jun 25</div>
+          <p class="mb-auto">We made cakes for party enjoy at home , office , park , picnic , hotel for more details watch our details .</p>
+          <a href="#" class="stretched-link">Buy Now</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="doll1.jpg">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<hr class="featurette-divider mb-5">
+  <div class="row mb-5">
+      <h2 class="row mb-5"> Testimonials </h2>
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="pihucake.jpg">
+
+        <h2>Pihu</h2>
+        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+        
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="doll.jpg">
+
+        <h2>Shop demo </h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+                <img class="rounded-circle" src="chocolate.jpg">
+
+
+        <h2>Shop demo</h2>
+        <p>And lastly this, the third column of representative placeholder content.</p>
+      </div><!-- /.col-lg-4 -->
+    </div>
+
+    <hr class="featurette-divider mb-5">
+
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+  <p class="lead">
+  #Do you have <mark>any questions ?</mark>
+  </p>
+  <div class="accordion-item table-primary">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        i ) How many range of cakes available ?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">We have an lot of family party celebration cakes ranges<code> chocolate , pineapple , vanilla</code> </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        ii) Which prize of cakes you have provide ?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"> <code> We have minimum cake prize from 200/- in vanilla , chocolate , menago flavers.  </code>.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        iii) How can we place an order ?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"> Okay just simply you can place order threw website and mobile call also both are accepted ! <code></code> .</div>
+    </div>
+  </div>
+</div>
+      
+      </div>
+      
+
+      <footer class="footer mt-auto py-3 bg-dark">
+  <div class="container">
+    <span class="text-muted">Navya Backery Rajasmand 2021.</span>
+  </div>
+</footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
